@@ -15,7 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 html { overflow-y: scroll; }
 body { 
-  background: #; 
+  background: #ffffff; 
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #313131;
   font-size: 70.5%; 
@@ -89,7 +89,7 @@ img { border: 0; max-width: 100%; }
 
 #stickynav {
   display: block;
-  height: 60px;
+  height: 25px;
   width: 100%;
   z-index: 9999;
 }

@@ -15,10 +15,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 html { overflow-y: scroll; }
 body { 
-  background: #f0f0f0; 
+  background: #; 
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #313131;
-  font-size: 62.5%; 
+  font-size: 70.5%; 
   line-height: 1; 
 }
 
@@ -66,10 +66,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 img { border: 0; max-width: 100%; }
 
 #topbar {
-  background: #4f4a41;
-  padding: 10px 0 10px 0;
+  background: #fff;
+  padding: 0px 0 0px 0;
   text-align: center;
-  height: 36px;
+  height: 0px;
   overflow: hidden;
   -webkit-transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
@@ -89,37 +89,38 @@ img { border: 0; max-width: 100%; }
 
 #stickynav {
   display: block;
-  height: 35px;
+  height: 60px;
   width: 100%;
   z-index: 9999;
 }
 
 #stickynav #nav { position: fixed; z-index: 9999; }
-#stickynav #nav li { display: inline; }
+#stickynav #nav li { display: inline-block; text-align:center;  }
 #stickynav #nav li a {
   display: block;
   float: left;
   margin-right: 8px;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 5px 7px;
-  background: #cce4c4;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 8px 7px;
+  background: #;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 #stickynav #nav li a:hover { 
   text-decoration: none;
-  background: #d8f0d0;
+  background: #fff
 }
 
+
 #stickynav #nav li a.nav-active {
-  color: #000;
+  color: #313131;
 }
 
 
 .section {
-  padding-top: 90px;
+  padding-top: 120px;
 }
 
 /** typography **/
@@ -130,7 +131,7 @@ h1 {
   letter-spacing: -0.05em;
   margin-bottom: 20px;
   padding: .1em 0;
-  color: #444;
+  color: #313131;
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
@@ -144,8 +145,13 @@ h1:after {
   width: 50%;
   height: 1px;
   vertical-align: middle;
-  background: #f0f0f0;
+  background: #313131;
 }
+div {
+    background-image:url(img/tile.jpg);
+    background-repeat:repeat;
+}
+
 h1:before {    
   left: -.5em;
   margin: 0 0 0 -50%;
@@ -168,7 +174,7 @@ h2 {
   letter-spacing: normal;
   margin-bottom: 20px;
   padding: .1em 0;
-  color: #444;
+  color: #999;
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
@@ -180,9 +186,10 @@ p {
   font-size: 1.35em;
   line-height: 1.5em;
   margin-bottom: 22px;
+  text-align: center;
 }
 
-a { color: #5a9352; text-decoration: none; }
+a { color: #313131; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .center { display: block; text-align: center; }
@@ -212,20 +219,20 @@ form .basictxt {
 /** page structure **/
 #w {
   display: block;
-  width: 750px;
+  width: 700px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 #content {
   display: block;
   width: 100%;
   background: #fff;
-  padding: 25px 20px;
+  padding: 0px 20px;
   padding-bottom: 35px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
 }
 
 /** clearfix **/
